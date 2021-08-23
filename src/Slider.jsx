@@ -25,7 +25,7 @@ const classes = {
     background: "#fff",
     padding: theme.spacing(3)
   }),
-  slider1: {
+  slider: {
     width: SLIDER.width,
     "&:hover .ant-slider-track": {
       background: "#F0F1FB"
@@ -70,7 +70,7 @@ const Slider = () => {
         <Typography>Changer la taille de la police d’écriture</Typography>
         <div className="m-t-25">
           <AntdSlider
-            css={classes.slider1}
+            css={classes.slider}
             handleStyle={classes.rail}
             tipFormatter={formatter}
             min={18}
