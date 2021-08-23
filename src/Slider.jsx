@@ -20,7 +20,7 @@ const formatter = (value) => {
 const classes = {
   sliderContainer: {},
   layoutContent: (theme) => ({
-    minHeight: "75vh",
+    minHeight: "85vh",
     margin: 0,
     background: "#fff",
     padding: theme.spacing(3)

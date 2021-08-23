@@ -22,7 +22,7 @@ const links = [
 const classes = {
   footer: (theme) => ({
     backgroundColor: theme.colors.dark,
-    height: "25vh"
+    height: "15vh"
   }),
   linkContainer: {
     margin: 10
