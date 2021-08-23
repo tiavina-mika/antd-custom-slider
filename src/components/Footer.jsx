@@ -21,7 +21,8 @@ const links = [
 
 const classes = {
   footer: (theme) => ({
-    backgroundColor: theme.colors.dark
+    backgroundColor: theme.colors.dark,
+    height: "25vh"
   }),
   linkContainer: {
     margin: 10
@@ -44,10 +45,7 @@ const classes = {
 
 const Footer = () => {
   return (
-    <Layout.Footer
-      css={classes.footer}
-      className="flexCenter stretchSelf m-t-25"
-    >
+    <Layout.Footer css={classes.footer} className="flexCenter stretchSelf">
       <div className="flexCenter flex1">
         <div css={classes.links} className="flexRow justifyCenter flex1">
           {links.map((link, index) => (

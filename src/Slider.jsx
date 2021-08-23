@@ -19,11 +19,12 @@ const formatter = (value) => {
 
 const classes = {
   sliderContainer: {},
-  layoutContent: {
-    minHeight: "85vh",
+  layoutContent: (theme) => ({
+    minHeight: "75vh",
     margin: 0,
-    background: "#fff"
-  },
+    background: "#fff",
+    padding: theme.spacing(3)
+  }),
   slider1: {
     width: SLIDER.width,
     "&:hover .ant-slider-track": {
@@ -63,7 +64,7 @@ const Slider = () => {
     <div css={classes.sliderContainer} className="flexCenter">
       <Layout.Content
         css={classes.layoutContent}
-        className="flexCenter justifyStart stretchSelf p-x-25"
+        className="flexCenter justifyStart stretchSelf"
       >
         <Typography variant="title">AntDesign slider customization</Typography>
         <Typography>Changer la taille de la police d’écriture</Typography>
