@@ -5,13 +5,13 @@ import "antd/dist/antd.css";
 
 import theme from "./styles/theme";
 import { globalStyles } from "./styles/styles";
-import Color from "./Color";
+import Editor from "./Editor";
 
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
       {globalStyles}
-      <Color />
+      <Editor />
     </ThemeProvider>
   );
 };
